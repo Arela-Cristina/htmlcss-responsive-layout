@@ -126,17 +126,26 @@ header img {
         align-items: center;
         gap: 20px;
     }
-}
 
-
-
-/***RESPONSIVE CELLPHONE
-
-@media all and (min-width: 480px) {
-
-    .w-70 {
-        width: 70%
+    .col-big {
+        width: calc((100% / 3 * 2) - 5px);
+        /*debug*/
+        background-color: coral
     }
 
+    .col-big.display {
+        display: flex;
+    }
 
-}***/
+    .demo-img {
+        width: 200px;
+        margin-top: 60px;
+        display: block;
+    }
+
+    .col-33 {
+        width: calc((100% / 3) - 10px);
+        /*debug*/
+        background-color: coral
+    }
+}

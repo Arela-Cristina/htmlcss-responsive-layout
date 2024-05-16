@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans, sans-serif'
 }
 
 a {
@@ -51,7 +54,7 @@ ul.menu {
     background-color: pink;
 }
 
-#functions .mtop-10px {
+#functions .mx-10 {
     margin-top: 20px;
 }
 
@@ -66,15 +69,30 @@ ul.menu {
     margin-bottom: 15px;
 }
 
-.col-33{
-    width: calc((100% / 3) - 10px);
-    height: 100px;
+.col-big {
+    width: calc((100% / 3 * 2) - 5px);
     /*debug*/
     background-color: coral
 }
 
-.col.big {
-    width: calc((100% / 3 * 2) - 5px);
+.col-big.display {
+    display: flex;
+}
+
+/*content col-big*/
+.demo-box {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.demo-img {
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.col-33 {
+    width: calc((100% / 3) - 10px);
     height: 100px;
     /*debug*/
     background-color: coral

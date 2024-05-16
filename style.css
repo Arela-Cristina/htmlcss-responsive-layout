@@ -104,11 +104,12 @@ header img {
 .col-box {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     margin: 30px 20px 30px 20px;
 }
 
-/*SECTION II*/
+/*SECTION PLANNING*/
 
 .col-50 {
     width: 100%;
@@ -123,7 +124,29 @@ header img {
     width: 250px
 }
 
+/*SECTION TESTIMONIALS*/
+.partners-desktop {
+    display: none;
+}
 
+.witness-img {
+    border-radius: 50%;
+    width: 160px;
+    height: 155px;
+}
+
+.testimonial-box {
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.mx-20 {
+    margin-bottom: 20px;
+}
+
+.allpx-20 {
+    padding: 20px 20px 20px 20px;
+}
 
 /***RESPONSIVE DESKTOP ***/
 @media all and (min-width: 1025px) {
@@ -174,4 +197,34 @@ header img {
     .col-50 {
         width: 100%
     }
+
+    /*SECTION TESTIMONIALS*/
+    #partners {
+        display: none;
+    }
+
+    .partners-desktop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .col-100 {
+        width: 100%;
+    }
+
+    .testimonial-box {
+        background-color: blueviolet;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .text-box {
+        width: 65%;
+        margin: 0 auto;
+        text-align: initial;
+    }
 }
+

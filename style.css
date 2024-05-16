@@ -136,8 +136,12 @@ header img {
 }
 
 .testimonial-box {
-    background-color: blueviolet;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*debug*/
+    background-color: blueviolet;
 }
 
 .mx-20 {
@@ -148,7 +152,13 @@ header img {
     padding: 20px 20px 20px 20px;
 }
 
-/***RESPONSIVE DESKTOP ***/
+/* SECTION BENEFITS*/
+.testimonial-box.mobile {
+    display: block;
+    text-align: initial;
+}
+
+/******************RESPONSIVE DESKTOP ****************/
 @media all and (min-width: 1025px) {
 
     .w-70 {
@@ -213,10 +223,11 @@ header img {
         width: 100%;
     }
 
-    .testimonial-box {
+    .witness-box {
         background-color: blueviolet;
         border-radius: 10px;
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 20px 20px 20px 20px;
     }
@@ -226,5 +237,28 @@ header img {
         margin: 0 auto;
         text-align: initial;
     }
-}
 
+    /*SECTION PARTNERS*/
+
+    .w-70.mx-10.desktop {
+        display: block;
+    }
+
+    .col-33.desktop {
+        width: 100%;
+    }
+
+    .col-box.desktop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .testimonial-box.desktop {
+        width: calc((100% / 3) - 10px);
+        display: block;
+        text-align: initial;
+    }
+}

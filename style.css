@@ -23,7 +23,7 @@ header {
 }
 
 header .header-container {
-    width: 70%;
+    width: 90%;
     height: 60px;
     margin: 0 auto;
     display: flex;
@@ -56,7 +56,7 @@ header img {
 }
 
 .w-70 {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -158,6 +158,13 @@ header img {
     text-align: initial;
 }
 
+/*SECTION ABOUT US*/
+.col-box.about {
+    text-align: initial;
+    display: block;
+}
+}
+
 /******************RESPONSIVE DESKTOP ****************/
 @media all and (min-width: 1025px) {
 
@@ -238,7 +245,7 @@ header img {
         text-align: initial;
     }
 
-    /*SECTION PARTNERS*/
+    /*SECTION BENEFITS*/
 
     .w-70.mx-10.desktop {
         display: block;
@@ -261,4 +268,7 @@ header img {
         display: block;
         text-align: initial;
     }
+
+    /*SECTION ABOUT US*/
+
 }

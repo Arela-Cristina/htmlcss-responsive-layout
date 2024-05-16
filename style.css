@@ -46,13 +46,12 @@ header img {
 
 #functions {
     width: 100%;
-    height: 300px;
     margin: 0 auto;
     /*debug*/
     background-color: pink;
 }
 
-#functions .mx-10 {
+.w-70.mx-10 {
     margin-top: 20px;
 }
 
@@ -109,6 +108,22 @@ header img {
     margin: 30px 20px 30px 20px;
 }
 
+/*SECTION II*/
+
+.col-50 {
+    width: 100%;
+
+}
+
+.planning-img {
+    width: 336px
+}
+
+.planning-img2 {
+    width: 250px
+}
+
+
 
 /***RESPONSIVE DESKTOP ***/
 @media all and (min-width: 1025px) {
@@ -147,5 +162,16 @@ header img {
         width: calc((100% / 3) - 10px);
         /*debug*/
         background-color: coral
+    }
+
+    /*SECTION PLANNING*/
+    #planning {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .col-50 {
+        width: 100%
     }
 }

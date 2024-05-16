@@ -34,14 +34,12 @@ header .header-container {
 }
 
 header img {
-    width: 80px;
-    height: 40px;
+    width: 50px;
+    height: 25px;
 }
 
-ul.menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.menu-desktop {
+    display: none;
 }
 
 /*main*/
@@ -60,23 +58,27 @@ ul.menu {
 
 .w-70 {
     width: 70%;
-    height: 100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 15px;
+    /*debug*/
+    background-color: yellowgreen;
 }
 
 .col-big {
-    width: calc((100% / 3 * 2) - 5px);
+    width: 100%;
     /*debug*/
     background-color: coral
 }
 
 .col-big.display {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 /*content col-big*/
@@ -87,14 +89,13 @@ ul.menu {
 }
 
 .demo-img {
-    width: 70%;
-    margin-top: 60px;
-    margin-left: 20px;
+    width: 200px;
+    margin-top: 30px;
     display: block;
 }
 
 .col-33 {
-    width: calc((100% / 3) - 10px);
+    width: 100%;
     /*debug*/
     background-color: coral
 }
@@ -107,3 +108,35 @@ ul.menu {
     align-items: center;
     margin: 30px 20px 30px 20px;
 }
+
+
+/***RESPONSIVE DESKTOP ***/
+@media all and (min-width: 1025px) {
+
+    .w-70 {
+        width: 70%
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+/***RESPONSIVE CELLPHONE
+
+@media all and (min-width: 480px) {
+
+    .w-70 {
+        width: 70%
+    }
+
+
+}***/

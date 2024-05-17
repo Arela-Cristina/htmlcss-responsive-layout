@@ -169,6 +169,15 @@ header img {
     display: block;
 }
 
+/*SECTION GET STARTED*/
+.col-100-started {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*debug*/
+    background-color: #9792e4;
+}
 
 /******************RESPONSIVE DESKTOP ****************/
 @media all and (min-width: 1025px) {
@@ -303,5 +312,15 @@ header img {
     .col-50.about.content {
         width: 30%;
 
+    }
+
+    /*SECTION ABOUT US*/
+    .col-100-started.mx200 {
+        margin: 0 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*debug*/
+        background-color: #9792e4;
     }
 }

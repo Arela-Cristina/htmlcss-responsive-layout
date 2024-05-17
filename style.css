@@ -212,6 +212,7 @@ header img {
 
     .col-big.display {
         display: flex;
+        flex-direction: row;
     }
 
     .demo-img {

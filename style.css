@@ -161,6 +161,10 @@ header img {
     text-align: initial;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*SECTION ABOUT US*/
 
 .about-us-desktop {

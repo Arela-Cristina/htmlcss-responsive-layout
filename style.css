@@ -159,17 +159,26 @@ header img {
 }
 
 /*SECTION ABOUT US*/
+
+.about-us-desktop {
+    display: none;
+}
+
 .col-box.about {
     text-align: initial;
     display: block;
 }
-}
+
 
 /******************RESPONSIVE DESKTOP ****************/
 @media all and (min-width: 1025px) {
 
+    header .header-container {
+        width: 80%;
+    }
+
     .w-70 {
-        width: 70%
+        width: 80%
     }
 
     .menu-mobile {
@@ -271,4 +280,28 @@ header img {
 
     /*SECTION ABOUT US*/
 
+    #about-us {
+        display: none;
+    }
+
+    .about-us-desktop {
+        display: flex;
+    }
+
+    .w-70.lrpx-35 {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+
+    .col-50.about {
+        width: 66%;
+        /*debug*/
+        background-color: rgb(166, 255, 0);
+
+    }
+
+    .col-50.about.content {
+        width: 30%;
+
+    }
 }

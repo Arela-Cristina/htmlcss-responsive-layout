@@ -195,11 +195,15 @@ header img {
 /****************** MARGIN PADDING ****************/
 /****************** MARGIN PADDING ****************/
 .w-mx-90 {
-    width: 90%
+    width: 90%;
 }
 
 .w-mx-85 {
-    width: 85%
+    width: 85%;
+}
+
+.w-mx-100 {
+    width: 100%;
 }
 
 /******************RESPONSIVE TABLET ****************/
@@ -265,9 +269,6 @@ header img {
     }
 
     /*SECTION BENEFITS*/
-    /* #benefits {
-        display: none;
-    }  */
 
     section.w-70.mx-10.tablet {
         display: flex;
@@ -286,6 +287,33 @@ header img {
 
     .testimonial-box.tablet {
         width: calc(100% / 2 - 20px);
+    }
+
+    /*SECTION ABOUT US*/
+    #about-us {
+        display: none;
+    }
+
+    .about-us-desktop {
+        display: flex;
+    }
+
+    .w-70.lrpx-35.w-mx-100 {
+        padding-right: 35px;
+        padding-left: 35px;
+
+    }
+
+    .col-50.about {
+        width: 66%;
+        /*debug*/
+        background-color: rgb(166, 255, 0);
+
+    }
+
+    .col-50.about.content {
+        width: 30%;
+
     }
 }
 

@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: 'PT Sans, sans-serif'
 }
 
@@ -56,7 +59,7 @@ header img {
 }
 
 .w-70 {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -147,6 +150,7 @@ header img {
     background-color: blueviolet;
 }
 
+
 .mx-20 {
     margin-bottom: 20px;
 }
@@ -187,6 +191,105 @@ header img {
     background-color: #9792e4;
 }
 
+
+/****************** MARGIN PADDING ****************/
+/****************** MARGIN PADDING ****************/
+.w-mx-90 {
+    width: 90%
+}
+
+.w-mx-85 {
+    width: 85%
+}
+
+/******************RESPONSIVE TABLET ****************/
+/******************RESPONSIVE TABLET ****************/
+@media all and (min-width: 768px) {
+
+    /*SECTION DEMO TABLET*/
+    header .header-container {
+        width: 80%;
+    }
+
+
+    .menu-mobile {
+        display: block;
+    }
+
+    /*SECTION DEMO*/
+    .col-big {
+        width: calc((100% / 3 * 2) - 5px);
+        /*debug*/
+        background-color: coral
+    }
+
+    .col-big.display {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-33 {
+        width: calc((100% / 3) - 10px);
+        /*debug*/
+        background-color: coral
+    }
+
+    /*SECTION TESTIMONIALS*/
+    #partners {
+        display: none;
+    }
+
+    .partners-desktop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .col-100 {
+        width: 100%;
+    }
+
+    .witness-box {
+        background-color: blueviolet;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .text-box {
+        width: 65%;
+        margin: 0 auto;
+        text-align: initial;
+    }
+
+    /*SECTION BENEFITS*/
+    /* #benefits {
+        display: none;
+    }  */
+
+    section.w-70.mx-10.tablet {
+        display: flex;
+    }
+
+    .col-33.tablet {
+        width: 100%;
+    }
+
+    .col-box.tablet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .testimonial-box.tablet {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+/******************RESPONSIVE DESKTOP ****************/
 /******************RESPONSIVE DESKTOP ****************/
 @media all and (min-width: 1025px) {
 
@@ -273,6 +376,10 @@ header img {
     }
 
     /*SECTION BENEFITS*/
+
+    #benefits {
+        display: flex;
+    }
 
     .w-70.mx-10.desktop {
         display: block;

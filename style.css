@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'PT Sans, sans-serif'
+    font-family: "PT Sans", sans-serif;
 }
 
 a {
@@ -52,9 +52,8 @@ header img {
 
 }
 
-.w-70.mx-10 {
-    margin-top: 20px;
-}
+/* .w-70.mx-10 {
+    margin-top: 20px; */
 
 .w-70 {
     width: 80%;
@@ -63,7 +62,6 @@ header img {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 15px;
 }
 
 .col-big {
@@ -83,8 +81,8 @@ header img {
 /*content col-big*/
 .demo-box {
     margin-top: 25px;
-    margin-left: 20px;
-    margin-right: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .demo-img {
@@ -106,6 +104,7 @@ header img {
     text-align: center;
     align-items: center;
     margin: 30px 20px 30px 20px;
+    border-radius: 30px;
 }
 
 /*SECTION PLANNING*/
@@ -137,22 +136,18 @@ header img {
     height: 155px;
 }
 
+.about-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 .testimonial-box {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*debug*/
-    background-color: blueviolet;
-}
-
-
-.mx-20 {
-    margin-bottom: 20px;
-}
-
-.allpx-20 {
-    padding: 20px 20px 20px 20px;
+    background-color: #9792e4;
 }
 
 /* SECTION BENEFITS*/
@@ -187,6 +182,11 @@ header img {
     background-color: #9792e4;
 }
 
+.big-title {
+    font-size: 55px;
+    font-weight: 900;
+}
+
 
 /****************** MARGIN PADDING ****************/
 /****************** MARGIN PADDING ****************/
@@ -200,6 +200,39 @@ header img {
 
 .w-mx-100 {
     width: 100%;
+}
+
+.mx-20 {
+    margin-bottom: 20px;
+}
+
+.mx-40 {
+    margin-bottom: 40px;
+}
+
+.mxl-25 {
+    margin-left: 25px;
+}
+
+.mxl-15 {
+    margin-left: 15px;
+}
+
+.mxup-30 {
+    margin-top: 30px;
+}
+
+.allpx-20 {
+    padding: 20px 20px 20px 20px;
+}
+
+.allpx-35 {
+    padding: 30px 25px 40px 25px;
+}
+
+.tbpx {
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 /****************** BG COLOR ****************/
@@ -224,12 +257,122 @@ header img {
     background-color: #333333;
 }
 
+.bgbeige {
+    background-color: beige;
+}
+
 /****************** FONT COLOR ****************/
 /****************** FONT COLOR ****************/
+.blue {
+    color: #0084fd;
+}
 
+.gray {
+    color: #5a6e7f;
+}
 
+.white {
+    color: white;
+}
 
+.black {
+    color: black;
+}
 
+.violet {
+    color: #9792e4;
+}
+
+.whitesmoke {
+    color: #d3d2f3;
+}
+
+.yellow {
+    color: #fdc15f;
+}
+
+/****************** ELEMENT PROPERTIES ****************/
+/****************** ELEMENT PROPERTIES ****************/
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-40 {
+    font-size: 40px;
+}
+
+.letter-spacing {
+    letter-spacing: .2rem;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.paragraph {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 90%;
+    margin: 25px auto 25px;
+}
+
+.paragraph-no-bold {
+    font-size: 20px;
+    line-height: 40px;
+    width: 90%;
+    margin: 25px auto 25px;
+}
+
+.paragraph2-no-bold {
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.italic {
+    font-style: italic;
+}
+
+.fa-arrow-down {
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+/****************** BUTTON PROPERTIES ****************/
+/****************** BUTTON PROPERTIES ****************/
+.big-button {
+    padding: 10px 70px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+.small-button {
+    padding: 10px 35px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+
+.find-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.get-button {
+    padding: 25px 85px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
 
 /******************RESPONSIVE TABLET ****************/
 /******************RESPONSIVE TABLET ****************/
@@ -248,19 +391,15 @@ header img {
     /*SECTION DEMO*/
     .col-big {
         width: calc((100% / 3 * 2) - 5px);
-        /*debug*/
-        background-color: coral
     }
 
     .col-big.display {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
     }
 
     .col-33 {
         width: calc((100% / 3) - 10px);
-        /*debug*/
-        background-color: coral
     }
 
     /*SECTION TESTIMONIALS*/
@@ -279,16 +418,17 @@ header img {
     }
 
     .witness-box {
-        background-color: blueviolet;
+        background-color: #9792e4;
         border-radius: 10px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 20px 20px 20px 20px;
+        padding: 30px 25px 40px 25px;
+        ;
     }
 
     .text-box {
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
         text-align: initial;
     }
@@ -331,9 +471,6 @@ header img {
 
     .col-50.about {
         width: 66%;
-        /*debug*/
-        background-color: rgb(166, 255, 0);
-
     }
 
     .col-50.about.content {
@@ -348,8 +485,7 @@ header img {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /*debug*/
-        background-color: #9792e4;
+
     }
 }
 
@@ -362,7 +498,7 @@ header img {
     }
 
     .w-70 {
-        width: 80%
+        width: 85%
     }
 
     .menu-mobile {
@@ -375,10 +511,13 @@ header img {
         gap: 20px;
     }
 
+    .menu-button {
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+
     .col-big {
         width: calc((100% / 3 * 2) - 5px);
-        /*debug*/
-        background-color: coral
     }
 
     .col-big.display {
@@ -387,15 +526,14 @@ header img {
     }
 
     .demo-img {
-        width: 200px;
-        margin-top: 60px;
+        width: 240px;
+        margin-top: 152px;
         display: block;
+        margin-right: 20px;
     }
 
     .col-33 {
         width: calc((100% / 3) - 10px);
-        /*debug*/
-        background-color: coral
     }
 
     /*SECTION PLANNING*/
@@ -425,16 +563,20 @@ header img {
     }
 
     .witness-box {
-        background-color: blueviolet;
+        background-color: #9792e4;
         border-radius: 10px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 20px 20px 20px 20px;
+        padding: 30px 25px 40px 25px;
+    }
+
+    .partners-desktop.subtitle {
+        margin-left: 24px;
     }
 
     .text-box {
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
         text-align: initial;
     }
@@ -484,9 +626,6 @@ header img {
 
     .col-50.about {
         width: 66%;
-        /*debug*/
-        background-color: rgb(166, 255, 0);
-
     }
 
     .col-50.about.content {
@@ -501,7 +640,6 @@ header img {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /*debug*/
-        background-color: #9792e4;
+
     }
 }
